@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import styles from './feedbackOptions.module.css';
+import css from './feedbackOptions.module.css';
 
 
-const FeedbackOptions = () => {
+const FeedbackButtons = () => {
     return (
         <div>
             <h1>Please leave feedback</h1>
