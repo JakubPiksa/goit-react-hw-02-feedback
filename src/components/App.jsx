@@ -1,3 +1,5 @@
+import React from "react";
+import FeedbackOptions from './FeedbackOptions'
 export const App = () => {
   return (
     <div
