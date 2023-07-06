@@ -1,7 +1,11 @@
-import React from 'react';
-import 'css' from  './feedbackOptions.module.css';
+import React, { Component } from 'react';
+import styles from './feedbackOptions.module.css';
 
-const Feedback
 
+class FeedbackOptions extends Component {
+    render() {
+        return <h1>TEst</h1>
+    }
+};
 
 export default FeedbackOptions;
