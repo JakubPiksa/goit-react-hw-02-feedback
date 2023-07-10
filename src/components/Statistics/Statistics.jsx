@@ -14,9 +14,10 @@ const Statistics = () => {
       <ul>
         <li>Good: {feedbackCounter.good}</li>
         <li>Neutral: {feedbackCounter.neutral}</li>
-        <li>Bad: {feedbackCounter.bad}</li>
+        <li>Bad:  {feedbackCounter.bad}</li>
       </ul>
     </div>
+
   )
 };
 
