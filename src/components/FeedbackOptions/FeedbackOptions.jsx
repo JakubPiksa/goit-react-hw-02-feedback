@@ -1,22 +1,27 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import css from './feedbackOptions.module.css';
 
+const FeedbackOptions = () => {
+  const [, setFeedbackCounter] = useState({
+    good: 0,
+    neutral: 0,
+    bad: 0
+  });
 
-const FeedbackButtons = () => {
-    return (
-        <div>
-            <h1>Please leave feedback</h1>
-            <button>Good</button>
-            <button>Neutral</button>
-            <button>Bad</button>
-            <h2>Statistics</h2>
-            <ul>
-                <li>Good: 0</li>
-                <li>Neutral: 0</li>
-                <li>Bad: 0</li>
-            </ul>
-        </div>
-    );
+  const handleFeedback = (type) => {
+    setFeedbackCounter((prevCounts) => ({
+      ...prevCounts,
+      [type]: prevCounts[type] + 1
+    }));
+  };
+
+  return (
+    <div>
+      <button onClick={() => handleFeedback('good')}>Good</button>
+      <button onClick={() => handleFeedback('neutral')}>Neutral</button>
+      <button onClick={() => handleFeedback('bad')}>Bad</button>
+    </div>
+  );
 };
 
 export default FeedbackOptions;
