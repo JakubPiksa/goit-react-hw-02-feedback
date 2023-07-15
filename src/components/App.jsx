@@ -8,7 +8,7 @@ const App = () => {
     neutral: 0,
     bad: 0
   });
-
+//ghpages jest ble
   const [showStatistics, setShowStatistics] = useState(false);
 
   const handleFeedback = (type) => {
