@@ -1,20 +1,6 @@
-import React, { useState } from 'react';
-import css from './feedbackOptions.module.css';
+import React from 'react';
 
-const FeedbackOptions = () => {
-  const [, setFeedbackCounter] = useState({
-    good: 0,
-    neutral: 0,
-    bad: 0
-  });
-
-  const handleFeedback = (type) => {
-    setFeedbackCounter((prevCounts) => ({
-      ...prevCounts,
-      [type]: prevCounts[type] + 1
-    }));
-  };
-
+const FeedbackOptions = ({ handleFeedback }) => {
   return (
     <div>
       <button onClick={() => handleFeedback('good')}>Good</button>
