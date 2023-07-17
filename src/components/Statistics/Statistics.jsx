@@ -1,4 +1,6 @@
 import React from 'react';
+import css from './statistics.module.css'
+
 
 const Statistics = ({ feedbackCounter }) => {
   const countTotalFeedback = () => {
@@ -20,8 +22,8 @@ const Statistics = ({ feedbackCounter }) => {
 
   return (
     <div>
-      <h2>Statistics</h2>
-      <ul>
+      <h2 className={css.stats}>Statistics</h2>
+      <ul className={css.list}>
         <li>Good: {feedbackCounter.good}</li>
         <li>Neutral: {feedbackCounter.neutral}</li>
         <li>Bad: {feedbackCounter.bad}</li>
